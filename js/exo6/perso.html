@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <script>
+
+    function affiche(corner)
+    {
+        this.canvas2dContext.beginPath();
+        this.canvas2dContext.arc(this.x, this.y, this.d, 0, corner*2*Math.PI, false);
+        this.canvas2dContext.fillStyle = this.color;
+        this.canvas2dContext.fill();
+    }
+
+    function point(x,y,d,color,canvas)
+    {
+        this.canvas=canvas;
+        this.canvas2dContext=this.canvas.getContext("2d");
+        this.x=x;
+        this.y=y;
+        this.d=d;
+        this.color=color;
+        this.affiche=affiche;
+    }
+
+    function init()
+    {
+        canvas = document.getElementById("myCanvas");
+        pts = new point(100, 100, 100, "red", canvas);
+        pts.affiche(0.85);
+
+        pts1 = new point(100, 100, 75, "white", canvas);
+        pts1.affiche(1.0);
+    }
+  </script>
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <h1>My audio device</h1>
+  </head>
+  <body onload='init()'>
+    <canvas id="myCanvas" width="200" height="200"/>
+  </body>
+</html>

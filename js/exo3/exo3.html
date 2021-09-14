@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<script type="text/javascript">
+		function init()
+		{
+			laDiv1=document.createElement('div');
+			laDiv1.setAttribute('id','div1');
+			laDiv2=document.getElementById('div2');
+			laDiv1.setAttribute('style',"border-color:red; border-style: dotted;");
+			laDiv2.appendChild(laDiv1);
+
+			text=document.createElement('p');
+			text.setAttribute('id', 'divText');
+			text.append('Hello');
+			laDiv1.appendChild(text);
+
+		}
+	</script>
+	</head>
+	<body onload='init()'>
+		<div id='div2' style="border-color:black; border-style: solid;"></div>
+	</body>
+</html>
+
+<!--
+
+Q1 - Il ajoute en js une balise div avec un contour en pointillé rouge.
+
+Q2 - Oui, on peux les récupérers par tags.
+
+Q3 - Avec ce code :
+
+```javascript
+			text=document.createElement('p');
+			text.setAttribute('id', 'divText');
+			text.append('Hello');
+			laDiv1.appendChild(text
+
+```
+
+
+>
