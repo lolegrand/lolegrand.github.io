@@ -4,18 +4,58 @@
     --text: #FFFFFF;
 }
 
+@font-face {
+    font-family: titleFont;
+    src: url("Silkscreen-Bold.ttf");
+}
+
+a {
+    all: unset;
+}
+
 body {
     background-color: var(--primary);
     height: 100%;
-    width: 100%;
+    overflow: hidden;
 }
 
-.data-container {
+.centerContainer {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#picture {
-    border-radius: 50%;
+#titleContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("background.gif")
+}
+
+#title {
+    font-family: titleFont, serif;
+    font-size: 50px;
+    color: var(--text);
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    border-style: solid;
+}
+
+.subTitle {
+    font-family: titleFont, serif;
+    font-size: 30px;
+    color: var(--text);
+    text-align: center;
+}
+
+.subTitle:hover {
+    cursor: pointer;
+}
+
+.subTitle:hover:before {
+    content: ">>";
+}
+
+.subTitle:hover:after {
+    content: "<<";
 }
