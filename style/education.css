@@ -1,0 +1,41 @@
+body {
+    overflow: auto;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #515751, #000000 50%);
+    border-color: #FFFFFF;
+    border-style: solid;
+    transition: background 2s;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.section:hover {
+    background: linear-gradient(to right, #A33500, #000000);
+}
+
+.imgUniversity {
+    height: 300px;
+}
+
+.notCompleted:after {
+    content: "( Not completed yet )";
+    color: red;
+}
+
+.subSection {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    flex: 1;
+    align-items: center;
+    border-left: dashed 7px white;
+    margin-inline-start: 150px;
+}
+
+.subSection:hover {
+    background: linear-gradient(to top, #A33500, #000000);
+}
