@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07090f" />
+  <meta name="description" content="Portfolio — Louis Legrand (Android · Sécurité · Data)" />
+  <title>Louis Legrand — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Background FX -->
+  <div class="bgfx" aria-hidden="true">
+    <div class="bgfx__base"></div>
+    <div class="bgfx__blob bgfx__blob--a"></div>
+    <div class="bgfx__blob bgfx__blob--b"></div>
+    <div class="bgfx__cursor"></div>
+    <div class="bgfx__grid"></div>
+    <div class="bgfx__grain"></div>
+  </div>
+
+  <!-- Nav -->
+  <div class="nav-wrap">
+    <nav class="nav glass">
+      <button class="nav__brand" data-scroll="top" type="button">
+        <span class="iconbox" aria-hidden="true">
+          <!-- Sparkles -->
+          <svg viewBox="0 0 24 24" class="icon"><path d="M5 3l1.2 3.6L10 8l-3.8 1.4L5 13l-1.2-3.6L0 8l3.8-1.4L5 3zM16 2l1.7 5.1L23 9l-5.3 1.9L16 16l-1.7-5.1L9 9l5.3-1.9L16 2zM19 14l.9 2.7L23 18l-3.1 1.3L19 22l-.9-2.7L15 18l3.1-1.3L19 14z"/></svg>
+        </span>
+        <span class="nav__name">Louis Legrand</span>
+        <span class="nav__dot">·</span>
+        <span class="nav__title">Ingénieur logiciel — Android (Kotlin/Java)</span>
+      </button>
+
+      <div class="nav__links">
+        <button type="button" data-scroll="top">Accueil</button>
+        <button type="button" data-scroll="experience">Expériences</button>
+        <button type="button" data-scroll="skills">Compétences</button>
+        <button type="button" data-scroll="education">Formation</button>
+        <button type="button" data-scroll="projects">Projets</button>
+        <button type="button" data-scroll="certs">Certifs</button>
+      </div>
+
+      <button class="nav__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu">
+        Menu
+      </button>
+    </nav>
+
+    <div class="nav__mobile glass" id="mobileMenu" hidden>
+      <button type="button" data-scroll="top">Accueil</button>
+      <button type="button" data-scroll="experience">Expériences</button>
+      <button type="button" data-scroll="skills">Compétences</button>
+      <button type="button" data-scroll="education">Formation</button>
+      <button type="button" data-scroll="projects">Projets</button>
+      <button type="button" data-scroll="certs">Certifs</button>
+      <button type="button" data-scroll="contact">Contact</button>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="container">
+
+        <div class="section__head "> 
+        <div class="reveal">
+
+          <h1 class="hero__h1">Louis Legrand</h1>
+
+          <p class="hero__p">
+            <span class="hero__p-strong">Ingénieur logiciel — Android (Kotlin/Java)</span>
+            <span class="muted"> · </span>
+            <span>Spécialisé Android, appétence cybersécurité / data. Expérience en alternance puis CDI et stage recherche en bases de données distribuées.</span>
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn magnetic" href="mailto:louislegrand42@gmail.com" aria-label="Email">
+              <span class="btn__icon" aria-hidden="true">
+                <!-- Mail -->
+                <svg viewBox="0 0 24 24" class="icon"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              </span>
+              Email
+              <span class="btn__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>
+              </span>
+            </a>
+
+            <button class="btn btn--soft magnetic" type="button" data-scroll="experience" aria-label="Voir l’expérience">
+              <span class="btn__icon" aria-hidden="true">
+                <!-- Briefcase -->
+                <svg viewBox="0 0 24 24" class="icon"><path d="M10 6V4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/><path d="M4 7h16v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 12h16"/></svg>
+              </span>
+              Voir l’expérience
+              <span class="btn__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="pillrow">
+            <span class="pill">Clermont-Ferrand, France</span>
+            <span class="pill">CTF & sécurité</span>
+            <span class="pill">Data / SQL</span>
+            <span class="pill">Compose / Clean</span>
+          </div>
+        </div>
+
+        </div>
+
+
+        <div class="reveal">
+          <div class="glass card hero__side">
+            <div class="hero__side-top">
+              <div>
+                <div class="eyebrow">Focus</div>
+                <div class="hero__side-title">Android · Sécurité · Data</div>
+                <p class="muted2">Profil orienté produit (Scrum), culture performance/qualité, curiosité systèmes.</p>
+              </div>
+              <div class="iconbox iconbox--spin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M5 3l1.2 3.6L10 8l-3.8 1.4L5 13l-1.2-3.6L0 8l3.8-1.4L5 3zM16 2l1.7 5.1L23 9l-5.3 1.9L16 16l-1.7-5.1L9 9l5.3-1.9L16 2zM19 14l.9 2.7L23 18l-3.1 1.3L19 22l-.9-2.7L15 18l3.1-1.3L19 14z"/></svg>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="statgrid">
+              <div class="stat">
+                <div class="stat__left">
+                  <div class="iconbox" aria-hidden="true">
+                    <!-- Languages -->
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M3 5h8"/><path d="M7 5v14"/><path d="M5 19h4"/><path d="M13 7h8"/><path d="M13 11h6"/><path d="M13 15h8"/></svg>
+                  </div>
+                  <div>
+                    <div class="muted3">TOEIC</div>
+                    <div class="stat__hint">B2–C1</div>
+                  </div>
+                </div>
+                <div class="stat__value">925</div>
+              </div>
+
+              <div class="stat">
+                <div class="stat__left">
+                  <div class="iconbox" aria-hidden="true">
+                    <!-- Award -->
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M12 17l-5 3 1-6-4-4 6-1 2-5 2 5 6 1-4 4 1 6z"/></svg>
+                  </div>
+                  <div>
+                    <div class="muted3">Certifications</div>
+                    <div class="stat__hint">Scrum.org</div>
+                  </div>
+                </div>
+                <div class="stat__value">4</div>
+              </div>
+
+              <div class="stat">
+                <div class="stat__left">
+                  <div class="iconbox" aria-hidden="true">
+                    <!-- Trophy -->
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M12 12v4"/><path d="M9 20h6"/><path d="M4 6h4v2a4 4 0 0 1-4 4z"/><path d="M20 6h-4v2a4 4 0 0 0 4 4z"/></svg>
+                  </div>
+                  <div>
+                    <div class="muted3">CTF</div>
+                    <div class="stat__hint">404CTF</div>
+                  </div>
+                </div>
+                <div class="stat__value">Top 100</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="glass card card--tight">
+              <div class="muted3">Stack principal</div>
+              <div class="marquee" aria-label="Stack principal">
+                <div class="marquee__track">
+                  <span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>Gradle</span><span>SQL</span><span>Python</span><span>Clean Architecture</span><span>CTF</span>
+                  <span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>Gradle</span><span>SQL</span><span>Python</span><span>Clean Architecture</span><span>CTF</span>
+                  <span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>Gradle</span><span>SQL</span><span>Python</span><span>Clean Architecture</span><span>CTF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__icon iconbox" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M10 6V4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/><path d="M4 7h16v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 12h16"/></svg>
+          </div>
+          <div>
+            <div class="eyebrow">Parcours</div>
+            <h2 class="h2">Expériences</h2>
+          </div>
+        </div>
+
+        <div class="stack">
+          <!-- Openium -->
+          <article class="glass card reveal">
+            <div class="card__top">
+              <div class="card__left">
+                <div class="iconbox" aria-hidden="true">
+                  <!-- Smartphone -->
+                  <svg viewBox="0 0 24 24" class="icon"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M11 19h2"/></svg>
+                </div>
+                <div>
+                  <div class="eyebrow">Clermont-Ferrand, France</div>
+                  <div class="card__title">Développeur Android</div>
+                  <div class="muted2">Openium</div>
+                </div>
+              </div>
+              <div class="card__right">
+                <div class="badge2">mars 2021 — aujourd’hui</div>
+                <div class="muted3 hide-sm">#01</div>
+              </div>
+            </div>
+
+            <div class="card__grid">
+              <div class="card__bullets">
+                <div class="bullet"></span>Alternance développeur Android puis CDI.</div>
+                <div class="bullet"></span>Travail sur des bases de code Android variées : XML + ViewModel jusqu’à Jetpack Compose.</div>
+                <div class="bullet"></span>Modernisation vers des architectures plus robustes (Clean Architecture, bonnes pratiques Gradle).</div>
+              </div>
+              <div class="card__tags">
+                <span class="tech">Kotlin</span><span class="tech">Java</span><span class="tech">Jetpack Compose</span><span class="tech">Gradle</span><span class="tech">Clean Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Osaka -->
+          <article class="glass card reveal">
+            <div class="card__top">
+              <div class="card__left">
+                <div class="iconbox" aria-hidden="true">
+                  <!-- Database -->
+                  <svg viewBox="0 0 24 24" class="icon"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                </div>
+                <div>
+                  <div class="eyebrow">Osaka, Japon</div>
+                  <div class="card__title">Assistant de recherche en laboratoire</div>
+                  <div class="muted2">Onizuka Laboratory (Université d’Osaka)</div>
+                </div>
+              </div>
+              <div class="card__right">
+                <div class="badge2">mars 2024 — juin 2024</div>
+                <div class="muted3 hide-sm">#02</div>
+              </div>
+            </div>
+
+            <div class="card__grid">
+              <div class="card__bullets">
+                <div class="bullet">Stage recherche axé sur l’optimisation de requêtes dans des bases de données distribuées.</div>
+                <div class="bullet">Travail sur la performance, l’analyse et l’itération scientifique (benchmarks, hypothèses, mesures).</div>
+              </div>
+              <div class="card__tags">
+                <span class="tech">Distributed DB</span><span class="tech">Query Optimization</span><span class="tech">SQL</span><span class="tech">Research</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Arke -->
+          <article class="glass card reveal">
+            <div class="card__top">
+              <div class="card__left">
+                <div class="iconbox" aria-hidden="true">
+                  <!-- Briefcase -->
+                  <svg viewBox="0 0 24 24" class="icon"><path d="M10 6V4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"/><path d="M4 7h16v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 12h16"/></svg>
+                </div>
+                <div>
+                  <div class="eyebrow">Issoire, France</div>
+                  <div class="card__title">Développeur embarqué (apprentissage)</div>
+                  <div class="muted2">Arke</div>
+                </div>
+              </div>
+              <div class="card__right">
+                <div class="badge2">sept. 2020 — déc. 2021</div>
+                <div class="muted3 hide-sm">#03</div>
+              </div>
+            </div>
+
+            <div class="card__grid">
+              <div class="card__bullets">
+                <div class="bullet">Startup : projets mobiles (Dart/Flutter), embarqués et logiciels (Java).</div>
+                <div class="bullet">Polyvalence : cycles courts, itération produit, mise en production et contraintes terrain.</div>
+              </div>
+              <div class="card__tags">
+                <span class="tech">Flutter</span><span class="tech">Dart</span><span class="tech">Embedded</span><span class="tech">Java</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__icon iconbox" aria-hidden="true">
+            <!-- Brain -->
+            <svg viewBox="0 0 24 24" class="icon"><path d="M8 4a3 3 0 0 0-3 3v1a3 3 0 0 0 0 6v1a3 3 0 0 0 3 3"/><path d="M16 4a3 3 0 0 1 3 3v1a3 3 0 0 1 0 6v1a3 3 0 0 1-3 3"/><path d="M8 4h8"/><path d="M8 20h8"/></svg>
+          </div>
+          <div>
+            <div class="eyebrow">Stack</div>
+            <h2 class="h2">Compétences</h2>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <article class="glass card reveal">
+            <div class="card__minihead">
+              <div class="iconbox" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M11 19h2"/></svg>
+              </div>
+              <div>
+                <div class="eyebrow">Domaine</div>
+                <div class="card__title">Android</div>
+              </div>
+            </div>
+
+            <div class="chipwrap">
+              <button type="button" class="chip">Kotlin</button>
+              <button type="button" class="chip">Java</button>
+              <button type="button" class="chip">Jetpack Compose</button>
+              <button type="button" class="chip">Gradle</button>
+            </div>
+
+            <div class="hintbox">
+              <span class="hintbox__n">4</span> technologies / sujets principaux.
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="card__minihead">
+              <div class="iconbox" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M12 3l8 4v6c0 5-3.4 8.4-8 9-4.6-.6-8-4-8-9V7z"/></svg>
+              </div>
+              <div>
+                <div class="eyebrow">Domaine</div>
+                <div class="card__title">Cybersécurité</div>
+              </div>
+            </div>
+
+            <div class="chipwrap">
+              <button type="button" class="chip">CTF / Challenges</button>
+              <button type="button" class="chip">Scripting Python</button>
+              <button type="button" class="chip">Algorithmie</button>
+            </div>
+
+            <div class="hintbox">
+              <span class="hintbox__n">3</span> technologies / sujets principaux.
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="card__minihead">
+              <div class="iconbox" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M8 4a3 3 0 0 0-3 3v1a3 3 0 0 0 0 6v1a3 3 0 0 0 3 3"/><path d="M16 4a3 3 0 0 1 3 3v1a3 3 0 0 1 0 6v1a3 3 0 0 1-3 3"/><path d="M8 4h8"/><path d="M8 20h8"/></svg>
+              </div>
+              <div>
+                <div class="eyebrow">Domaine</div>
+                <div class="card__title">Data / IA</div>
+              </div>
+            </div>
+
+            <div class="chipwrap">
+              <button type="button" class="chip">SQL</button>
+              <button type="button" class="chip">Ingénierie des données</button>
+              <button type="button" class="chip">Bases distribuées</button>
+            </div>
+
+            <div class="hintbox">
+              <span class="hintbox__n">3</span> technologies / sujets principaux.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__icon iconbox" aria-hidden="true">
+            <!-- GraduationCap -->
+            <svg viewBox="0 0 24 24" class="icon"><path d="M22 10L12 5 2 10l10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+          </div>
+          <div>
+            <div class="eyebrow">Académique</div>
+            <h2 class="h2">Formation</h2>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <article class="glass card reveal">
+            <div class="edu__row">
+              <div>
+                <div class="edu__deg">Diplôme d’ingénieur (apprentissage)</div>
+                <div class="muted2">ENSSAT (Rennes 1)</div>
+                <div class="muted3">Lannion, Bretagne, France</div>
+              </div>
+              <div class="badge2">sept. 2021 — août 2024</div>
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="edu__row">
+              <div>
+                <div class="edu__deg">Licence professionnelle</div>
+                <div class="muted2">Université de l’UCA</div>
+                <div class="muted3">Clermont-Ferrand, Auvergne, France</div>
+              </div>
+              <div class="badge2">sept. 2020 — août 2021</div>
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="edu__row">
+              <div>
+                <div class="edu__deg">Échange académique (2e année informatique)</div>
+                <div class="muted2">UCAQ</div>
+                <div class="muted3">Chicoutimi, Québec, Canada</div>
+              </div>
+              <div class="badge2">janv. 2020 — mai 2020</div>
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="edu__row">
+              <div>
+                <div class="edu__deg">DUT informatique</div>
+                <div class="muted2">Université de l’UCA</div>
+                <div class="muted3">Clermont-Ferrand, Auvergne, France</div>
+              </div>
+              <div class="badge2">sept. 2018 — août 2020</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__icon iconbox" aria-hidden="true">
+            <!-- Trophy -->
+            <svg viewBox="0 0 24 24" class="icon"><path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M12 12v4"/><path d="M9 20h6"/><path d="M4 6h4v2a4 4 0 0 1-4 4z"/><path d="M20 6h-4v2a4 4 0 0 0 4 4z"/></svg>
+          </div>
+          <div>
+            <div class="eyebrow">Réalisations</div>
+            <h2 class="h2">Projets & CTF</h2>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <article class="glass card reveal">
+            <div class="proj__top">
+              <div>
+                <div class="eyebrow">Personnel</div>
+                <div class="card__title">CTF & compétitions cybersécurité</div>
+              </div>
+              <div class="iconbox" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M12 3l8 4v6c0 5-3.4 8.4-8 9-4.6-.6-8-4-8-9V7z"/></svg>
+              </div>
+            </div>
+
+            <div class="proj__list">
+              <div class="bullet">3ᵉ — Break the code Bretagne (Sopra Steria)</div>
+              <div class="bullet">99ᵉ / 3800 — 404CTF (DGSI)</div>
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="proj__top">
+              <div>
+                <div class="eyebrow">Professionnel</div>
+                <div class="card__title">Interfaces multiplateformes</div>
+              </div>
+              <div class="iconbox" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M5 3l1.2 3.6L10 8l-3.8 1.4L5 13l-1.2-3.6L0 8l3.8-1.4L5 3zM16 2l1.7 5.1L23 9l-5.3 1.9L16 16l-1.7-5.1L9 9l5.3-1.9L16 2zM19 14l.9 2.7L23 18l-3.1 1.3L19 22l-.9-2.7L15 18l3.1-1.3L19 14z"/></svg>
+              </div>
+            </div>
+
+            <div class="proj__list">
+              <div class="bullet">Développement d’interfaces mobiles Android / iOS / Web.</div>
+              <div class="bullet">Domaines : médical, industriel, social.</div>
+              <div class="bullet">Adaptation à des cahiers des charges hétérogènes, exigences qualité et contraintes métier.</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certs & languages -->
+    <section id="certs" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__icon iconbox" aria-hidden="true">
+            <!-- Award -->
+            <svg viewBox="0 0 24 24" class="icon"><path d="M12 17l-5 3 1-6-4-4 6-1 2-5 2 5 6 1-4 4 1 6z"/></svg>
+          </div>
+          <div>
+            <div class="eyebrow">Preuves</div>
+            <h2 class="h2">Certifications & Langues</h2>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <article class="glass card reveal">
+            <div class="proj__top">
+              <div>
+                <div class="eyebrow">Scrum.org</div>
+                <div class="card__title">Certifications</div>
+                <p class="muted2">Un socle solide pour des équipes orientées produit et des livraisons régulières.</p>
+              </div>
+              <div class="iconbox iconbox--spin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M12 17l-5 3 1-6-4-4 6-1 2-5 2 5 6 1-4 4 1 6z"/></svg>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="list">
+              <div class="list__row"><span>PSD I — Professional Scrum Developer</span><span class="muted3">OK</span></div>
+              <div class="list__row"><span>PSPO I — Professional Scrum Product Owner I</span><span class="muted3">OK</span></div>
+              <div class="list__row"><span>PSPO II — Professional Scrum Product Owner II</span><span class="muted3">OK</span></div>
+              <div class="list__row"><span>PSM I — Professional Scrum Master I</span><span class="muted3">OK</span></div>
+            </div>
+          </article>
+
+          <article class="glass card reveal">
+            <div class="card__minihead">
+              <div class="iconbox" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M3 5h8"/><path d="M7 5v14"/><path d="M5 19h4"/><path d="M13 7h8"/><path d="M13 11h6"/><path d="M13 15h8"/></svg>
+              </div>
+              <div>
+                <div class="eyebrow">Communication</div>
+                <div class="card__title">Langues</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="list">
+              <div class="list__row"><span>Français</span><span class="muted3">Natif</span></div>
+              <div class="list__row"><span>Anglais</span><span class="muted3">TOEIC 925 (B2–C1)</span></div>
+              <div class="list__row"><span>LSF</span><span class="muted3">Basique</span></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="glass card card--tight">
+              <div class="eyebrow">Centres d’intérêt</div>
+              <div class="pillrow pillrow--tight">
+                <span class="pill">Concert / spectacle vivant</span>
+                <span class="pill">Lecture / bande dessinée</span>
+                <span class="pill">Voyages (Canada, Croatie, Angleterre, Espagne, Japon)</span>
+                <span class="pill">CTF, challenges d’algorithmie</span>
+                <span class="pill">Hockey subaquatique (10 ans)</span>
+                <span class="pill">Water polo</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="container">
+        <div class="glass card footer__card reveal">
+          <div>
+            <div class="footer__name">Louis Legrand</div>
+            <div class="muted3">Ingénieur logiciel — Android (Kotlin/Java) · Clermont-Ferrand, France</div>
+          </div>
+          <button class="btn btn--ghost" type="button" data-scroll="top">Retour en haut</button>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
